@@ -263,7 +263,12 @@ html{
     
 }
 
+.homepage__header h4 {
+    position: absolute;
+    top: 15px;
+    left: 100px;
 
+}
 @media (max-width:500px) {
     .blob {
         height: 150px;
@@ -272,10 +277,9 @@ html{
         align-items: center;
     }
     .homepage__header h4{
-        text-align: center;
         left: 50%;
-        transform: translate(0%, -0%);
-        font-weight: 600;
+            transform: translate(-50%, 0);
+        
     }
     .page__section__1__card{
         display: none;
