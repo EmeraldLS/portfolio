@@ -273,7 +273,8 @@ html{
     }
     .homepage__header h4{
         text-align: center;
-        left: 0;
+        left: 50%;
+        transform: translate(0%, -0%);
     }
     .page__section__1__card{
         display: none;
