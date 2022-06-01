@@ -267,11 +267,9 @@ html{
         justify-content: center;
         align-items: center;
     }
-    .homepage__header{
+    .homepage__header h4{
         text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        left: 0;
     }
     .page__section__1__card{
         display: none;
