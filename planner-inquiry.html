@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Your description" />
+    <meta name="author" content="Earl Samm" />
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
+    <meta property="og:site_name" content="" />
+    <!-- website name -->
+    <meta property="og:site" content="" />
+    <!-- website link -->
+    <meta property="og:title" content="" />
+    <!-- title shown in the actual shared post -->
+    <meta property="og:description" content="" />
+    <!-- description shown in the actual shared post -->
+    <meta property="og:image" content="" />
+    <!-- image link, make sure it's jpg -->
+    <meta property="og:url" content="" />
+    <!-- where do you want your post to link to -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <!-- to have large image post format in Twitter -->
+
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <title>Lawrence Segun | Front-end developer</title>
+</head>
+
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'JetBrains Mono';
+        }
+
+        .smallbox {
+            height: 30px;
+            width: 20px;
+            border: 2px solid white;
+            background: transparent;
+            position: absolute;
+            left: 99px;
+            top: 15px;
+        }
+
+        .short__line {
+            background: white;
+            width: 27px;
+            height: 3px;
+            position: absolute;
+            left: 22px;
+            top: -3px;
+        }
+
+        .long__line {
+            background: white;
+            width: 53px;
+            height: 3px;
+            position: absolute;
+            left: 22px;
+            top: 15px;
+        }
+
+        .btn {
+            padding: 10px 50px;
+            border: 2px solid #4b21ff;
+            border-radius: 50px;
+            font-size: 20px;
+            background-color: transparent;
+            transition: all 0.4s ease
+        }
+
+        .btn:hover {
+            background-color: #4b21ff;
+            color: #fff
+        }
+
+        .icon1 {
+            background-color: transparent;
+            border: 0;
+            outline: 0;
+            padding-left: 5px;
+            padding-right: 5px;
+            cursor: pointer;
+        }
+
+        .icon1:focus,
+        .icon1:active {
+            border: 0;
+            outline: 0;
+        }
+
+        input:focus,
+        input:active {
+            outline: none !important;
+            border: 1px solid red
+        }
+
+        @media (max-width:992px) {
+            .icon1 {
+                display: none;
+            }
+        }
+    </style>
+
+    <nav class="navbar navbar-expand-lg navbar-dark " style="padding-bottom: 30px; background-color: #4b21ff;">
+        <a class="navbar-brand" href="#">
+            <header>
+                <h6 class=" pl-4 text-white" style="letter-spacing: 4px; font-weight: bold">
+                    LAWR
+                </h6>
+                <div class="smallbox"></div>
+                <h6 class="" style="position: relative">
+                    <span class="short__line"></span>
+                    <span style="
+                        font-weight: bold;
+                        letter-spacing: 4px;
+                        color: white;
+                        position: absolute;
+                        left: 55px;
+                        top: -10px;
+                    ">EN</span>
+                </h6>
+                <h6 style="position: relative">
+                    <span class="long__line"></span><span style="
+                        color: white;
+                        position: absolute;
+                        letter-spacing: 4px;
+                        font-weight: bold;
+                        left: 80px;
+                        top: 8px;
+                    ">CE</span>
+                </h6>
+            </header>
+        </a>
+
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <button class="icon1" style="color: #fff;margin-right:50px" title="Reset Form">
+                <i class="fa-solid fa-arrow-rotate-right fa-1x mt-3"></i>
+            </button>
+            <a href="./index.html" style="color: #fff;margin-right:50px" title="Back to Home">
+                <i class="fa-solid fa-x fa-1x mt-3"></i>
+            </a>
+
+
+        </ul>
+
+
+    </nav>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <div>
+                    <h3 class="text-center">Want to discuss a startup collaboration? I'm most definitely game.</h3>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <form action="" id="form">
+                    <div class="row">
+                        <div class="col-md-6 p-3 ">
+                            <label for="fname">Name </label>
+                            <input type="text" name="fname" id="fname" placeholder=""
+                                class="form-control form-control-lg">
+                        </div>
+                        <div class="col-md-6 p-3">
+                            <label for="email">Email</label>
+                            <input type="text" name="email" id="email" placeholder=""
+                                class="form-control form-control-lg">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="project">Type of project</label>
+                            <select name="project" id="project" class="form-control form-control-select">
+                                <option value="" disabled selected></option>
+                                <option value="e_commerce">Response Web design</option>
+                                <option value="social_media">Web App</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="budget">Budget</label>
+                            <select name="budget" id="budget" class="form-control form-control-select">
+                                <option value="" disabled selected></option>
+                                <option value="option1">&#8358;50k - &#8358;150k</option>
+                                <option value="option2">&#8358;150k - &#8358;300k</option>
+                                <option value="option3">&#8358;300k+</option>
+                            </select>
+                        </div>
+                    </div>
+                    <label for="details">Addional Details </label>
+                    <textarea name="details" id="details" cols="30" rows="10" class="form-control"
+                        placeholder=""></textarea>
+                    <div class="d-flex justify-content-center mt-4 pb-4">
+                        <button class="btn">Submit</button>
+                    </div>
+
+                </form>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+
+    </div>
+
+
+
+
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>
+
+    <script>
+        let icon1 = document.querySelector(".icon1")
+        let form = document.querySelector("#form")
+        icon1.addEventListener("click", function () {
+            form.reset()
+        })
+    </script>
+</body>
+
+</html>

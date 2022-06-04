@@ -7,7 +7,7 @@
 }
 
 body{
-    background-color: #f3f5fa;
+    background-color: #fff;
 }
 
 
@@ -28,7 +28,8 @@ body{
 }
 
 .blob img{
-    height: 50px;
+    height: 40px;
+
 }
 
 .page__section__2{
@@ -48,9 +49,9 @@ body{
 .page__section__5, .page__section__4{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: column;
-    height: 60vh !important;
+    height: 40vh !important;
 }
 
 .collab-btn{
@@ -60,6 +61,23 @@ body{
     background-color: transparent;
     transition: all 0.4s ease;
     color: #211f24;
+}
+
+.project-btn{
+    padding: 10px 50px;
+    border: 2px solid #4b21ff;
+    border-radius: 50px;
+    background-color: transparent;
+    transition: all 0.4s ease;
+    color: #fff;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.project-btn:hover {
+    background-color: #4b21ff;
+    text-decoration: none;
+    color: #fff
 }
 
 .collab-btn:hover{
@@ -89,7 +107,7 @@ html{
 
 .page__content{
     /* height: 100vh; */
-    scroll-snap-type:y mandatory;
+    /* scroll-snap-type:y mandatory; */
     overflow: auto;
 }
 
@@ -200,6 +218,20 @@ html{
     animation-iteration-count: infinite;
 }
 
+
+.project_link{
+    text-transform: none;
+    font-weight: bold;
+    color: #4b21ff;
+    border: 2px solid #4b21ff;
+}
+
+.project_link:hover{
+    color: #fff;
+    border: 2px solid #4b21ff;
+    background-color: #4b21ff;
+}
+
 @keyframes glass__move{
     0%{
         transform : rotate(0deg)
@@ -269,12 +301,6 @@ html{
 
 }
 @media (max-width:500px) {
-    .blob {
-        height: 150px;
-        width: 150px;
-        justify-content: center;
-        align-items: center;
-    }
     .homepage__header h4{
         left: 50%;
             transform: translate(-50%, 0);
@@ -289,3 +315,115 @@ html{
 .icons a{
     color:#fff
 }
+
+/* 9B89EA My new color */
+
+.myFooter{
+    background-color: #4b21ff;
+    background-image: url(../images/Vector\ 1.png);
+    height: 40vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0 20px;
+}
+
+.start_project
+{
+    
+    width: 100%;
+    transform: translate(0, 10%);
+    height: 100%;
+    padding: 20px;
+    min-height: 10em;
+    background-color: #0e062c;
+    color: #fff;
+    position: absolute;
+    top: -100px;
+    left: 0;
+    border-radius: 20px;
+
+}
+
+.footer_content{
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.social_links{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social_links a{
+    background:transparent ;
+    border: 1px solid #fff;
+    color: #fff ;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+@media (max-width:991px) {
+    .start_project{
+        height: 20em;
+    }
+    .myFooter{
+        background-position: -350px 0px !important;
+        margin-top: 100px;
+        height: 70vh;
+    }
+    .footer_content{
+        align-items: flex-end;
+        margin-bottom: 20px;
+    }
+    .social_links{
+        margin-bottom: 30px;
+    }
+
+}
+
+
+@media (max-width:375px) {
+    .footer_content h4{
+        display: none !important;
+    }
+    
+}
+
+@media (max-width:500px) {
+    .start_project{
+        height: 22em;
+        padding-top: 10px;
+    }
+     .collab-btn{
+        padding: 5px 10px;
+    }
+    
+        
+}
+
+@media (max-width:400px) {
+    .start_project{
+        height: 25em;
+    }
+    
+}@media (max-width:295px){
+    .project-btn,
+        .collab-btn {
+            font-size: 12px;
+
+        }
+}
+
