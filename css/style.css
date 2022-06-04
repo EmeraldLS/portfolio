@@ -423,6 +423,9 @@ html{
      .collab-btn{
         padding: 5px 10px;
     }
+    .social_links a{
+        margin-bottom: 10px;
+    }
     
         
 }
