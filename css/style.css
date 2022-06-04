@@ -139,6 +139,7 @@ html{
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
     background-image: url(../images/LawrenceSegun.png);
+    background-color: #fff;
     background-size: cover;
     object-fit: cover;
     background-position: center;
