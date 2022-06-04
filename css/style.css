@@ -318,7 +318,8 @@ html{
 
 @media (max-width:400px) {
     .page__section__1__card{
-        left: 30px;
+        height: 250px;
+        width: 250px;
     }
     
 }
