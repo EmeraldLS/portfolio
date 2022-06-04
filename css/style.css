@@ -285,6 +285,7 @@ html{
         height: 300px;
         width: 300px;
         left: 120px;
+        display: none;
         
         border-radius: 100%;
     }
