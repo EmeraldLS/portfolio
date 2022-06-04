@@ -311,7 +311,7 @@ html{
         
     }
     .page__section__1__card{
-        display: none;
+        left: 50px;
     }
         
 }
