@@ -160,10 +160,10 @@
         <div class="row">
             <div class="col-md-2"></div>
             <div class="col-md-8">
-                <form action="" id="form">
+                <form id="form">
                     <div class="row">
                         <div class="col-md-6 p-3 ">
-                            <label for="fname">First Name </label>
+                            <label for="fname">Full Name </label>
                             <input type="text" name="fname" id="fname" placeholder="e.g John Doe" class="form-control form-control-lg">
                         </div>
                         <div class="col-md-6 p-3">
@@ -174,7 +174,7 @@
                     <label for="others">Message </label>
                     <textarea name="others" id="others" cols="30" rows="10" class="form-control" placeholder="Your thought means alot"></textarea>
                     <div class="d-flex justify-content-center mt-4 pb-4">
-                        <button class="btn">Submit</button>
+                        <button class="btn" id="contact-btn" type="button">Submit</button>
                     </div>
                     
                 </form>
@@ -188,14 +188,11 @@
     
 
     <script src="./js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>
-
+    <script src="./js/contact.js"></script>
     <script>
-        let icon1 = document.querySelector(".icon1")
-        let form = document.querySelector("#form")
-        icon1.addEventListener("click", function(){
-            form.reset()
-        })
+        
     </script>
 </body>
 </html>

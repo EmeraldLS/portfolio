@@ -189,16 +189,16 @@ input:focus, input:active{
                             <label for="interest">Your interest</label>
                             <select name="interest" id="interest" class="form-control form-control-select">
                                 <option value="" disabled selected></option>
-                                <option value="option1">Collaborator</option>
-                                <option value="option2">Investor</option>
-                                <option value="option3">Co-founder</option>
+                                <option value="collaborator">Collaborator</option>
+                                <option value="investor">Investor</option>
+                                <option value="co-founder">Co-founder</option>
                             </select>
                         </div>
                     </div>
                     <label for="details">Addional Details </label>
                     <textarea name="details" id="details" cols="30" rows="10" class="form-control" placeholder=""></textarea>
                     <div class="d-flex justify-content-center mt-4 pb-4">
-                        <button class="btn">Submit</button>
+                        <button class="btn" type="btn" id="startupBtn">Submit</button>
                     </div>
                     
                 </form>
@@ -213,13 +213,10 @@ input:focus, input:active{
 
     <script src="./js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>
+    <script src="./js/startup.js"></script>
     <script>
-        let icon1 = document.querySelector(".icon1")
-        let form = document.querySelector("#form")
-        icon1.addEventListener("click", function(){
-            form.reset()
-        })
+        
     </script>
 </body>
 </html>

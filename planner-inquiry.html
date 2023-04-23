@@ -175,13 +175,13 @@
                 <form action="" id="form">
                     <div class="row">
                         <div class="col-md-6 p-3 ">
-                            <label for="fname">Name </label>
-                            <input type="text" name="fname" id="fname" placeholder=""
+                            <label for="fname">Full Name </label>
+                            <input type="text" name="fname" id="fname" placeholder="e.g John Doe"
                                 class="form-control form-control-lg">
                         </div>
                         <div class="col-md-6 p-3">
                             <label for="email">Email</label>
-                            <input type="text" name="email" id="email" placeholder=""
+                            <input type="text" name="email" id="email" placeholder="example@domain.com"
                                 class="form-control form-control-lg">
                         </div>
                     </div>
@@ -198,9 +198,9 @@
                             <label for="budget">Budget</label>
                             <select name="budget" id="budget" class="form-control form-control-select">
                                 <option value="" disabled selected></option>
-                                <option value="option1">&#8358;50k - &#8358;150k</option>
-                                <option value="option2">&#8358;150k - &#8358;300k</option>
-                                <option value="option3">&#8358;300k+</option>
+                                <option value="50k to 149k">&#8358;50k - &#8358;149k</option>
+                                <option value="150k to 299k">&#8358;150k - &#8358;299k</option>
+                                <option value="300+">&#8358;300k+</option>
                             </select>
                         </div>
                     </div>
@@ -208,7 +208,7 @@
                     <textarea name="details" id="details" cols="30" rows="10" class="form-control"
                         placeholder=""></textarea>
                     <div class="d-flex justify-content-center mt-4 pb-4">
-                        <button class="btn">Submit</button>
+                        <button class="btn" type="button" id="plannerBtn">Submit</button>
                     </div>
 
                 </form>
@@ -222,15 +222,10 @@
 
 
     <script src="./js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>
-
-    <script>
-        let icon1 = document.querySelector(".icon1")
-        let form = document.querySelector("#form")
-        icon1.addEventListener("click", function () {
-            form.reset()
-        })
-    </script>
+    <script src="./js/planner.js"></script>
+   
 </body>
 
 </html>
