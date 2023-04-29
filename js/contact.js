@@ -74,6 +74,6 @@ const SendContactDataToServer = async (url) => {
 contactBtn.addEventListener("click", () => {
     contactBtn.disabled = true
     contactBtn.innerText = "Processing..."
-    SendContactDataToServer("http://127.0.0.1:8080/api/contact")
+    SendContactDataToServer("https://mybackendportfolio.up.railway.app/api/contact")
 })
 

@@ -78,5 +78,5 @@ const SendPlannerDataToServer = async (url) => {
 plannerBtn.addEventListener("click", () => {
     plannerBtn.disabled = true
     plannerBtn.innerText = "Processing..."
-    SendPlannerDataToServer("http://127.0.0.1:8080/api/planner-enquiry")
+    SendPlannerDataToServer("https://mybackendportfolio.up.railway.app/api/planner-enquiry")
 })
