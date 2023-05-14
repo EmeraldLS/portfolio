@@ -54,8 +54,13 @@ const SendContactDataToServer = async (url) => {
             title: 'Oops...',
             text: json.message,
           })
+    } else if (json.response == "mail_error") {
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: json.message,
+          })
     }
-    
     else if(json.response == "success"){
         Swal.fire({
             icon: 'success',
@@ -66,10 +71,19 @@ const SendContactDataToServer = async (url) => {
           })
         
     }
+
+    else{
+        Swal.fire({
+            icon: 'error',
+            title: 'Error occured',
+            text: "So sorry, an unknown error occured, pls try again later.",
+          })
+    }
+
     contactBtn.disabled = false
     contactBtn.innerText = "Submit"
-
 }
+
 
 contactBtn.addEventListener("click", () => {
     contactBtn.disabled = true

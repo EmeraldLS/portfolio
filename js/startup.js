@@ -63,6 +63,13 @@ const SendStartupDataToServer = async (url) => {
             text: json.message,
           })
     }
+    else if (json.response == "mail_error") {
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: json.message,
+          })
+    }
     
     else if(json.response == "success"){
         Swal.fire({
@@ -72,8 +79,18 @@ const SendStartupDataToServer = async (url) => {
           }).then(() => {
             form.reset()
           })
-        
     }
+    else{
+        Swal.fire({
+            icon: 'error',
+            title: 'Error occured',
+            text: "So sorry, an unknown error occured, pls try again later.",
+          })
+    }
+
+    startupBtn.disabled = false
+    startupBtn.innerText = "Submit"
+
 }
 
 startupBtn.addEventListener("click", () => {
