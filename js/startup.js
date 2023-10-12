@@ -96,6 +96,6 @@ const SendStartupDataToServer = async (url) => {
 startupBtn.addEventListener("click", () => {
     startupBtn.disabled = true
     startupBtn.innerText = "Processing..."
-        SendStartupDataToServer("https://mybackendportfolio.up.railway.app/api/startup-enquiry")
+        SendStartupDataToServer("https://portfolio-backend-0mjz.onrender.com/api/startup-enquiry")
 
 })
